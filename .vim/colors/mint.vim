@@ -3,7 +3,7 @@ highlight clear
 if exists("syntax_on")
 	syntax reset
 endif
-let g:colors_name = "vivify"
+let g:colors_name = "mint"
 set t_Co=256
 
 highlight Boolean             guifg=#eeddaa ctermfg=221                           gui=none cterm=none
