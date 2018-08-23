@@ -19,11 +19,15 @@ Plugin 'vim-scripts/CycleColor' " Cycle colorschemes with F3/F4
 
 " The buffer explorer plugin I like
 Plugin 'jlanzarotta/bufexplorer'
-map <F1> :BufExplorer<CR>
+map <Tab> :BufExplorer<CR>
 
 " Status line prettifier
 Plugin 'bling/vim-airline'
 set laststatus=2 " always show the status line
+
+Plugin 'pangloss/vim-javascript' " Different js syntax
+Plugin 'mxw/vim-jsx' " jsx syntax, relies on js from above
+let g:jsx_ext_required = 1 " jsx in jsx files only, no js
 
 call vundle#end()
 " end vundle stuff
