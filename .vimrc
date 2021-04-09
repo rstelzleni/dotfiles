@@ -86,6 +86,7 @@ au BufRead,BufNewFile,BufEnter *.menvstate set syntax=python
 au BufRead,BufNewFile,BufEnter *.menva set syntax=python
 au BufRead,BufNewFile,BufEnter *.cg set syntax=c
 au BufRead,BufNewFile {COMMIT_EDITMSG} set ft=gitcommit
+au BufRead,BufNewFile,BufEnter *.svelte set ft=html
 
 " Settings for files that need hard tabs
 au BufRead,BufNewFile,BufEnter *Makefile* set noet autoindent ts=8
