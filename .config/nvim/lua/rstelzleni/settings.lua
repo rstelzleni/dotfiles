@@ -17,3 +17,6 @@ vim.opt.backup = false
 
 -- line numbers, do I want this?
 vim.opt.nu = true 
+
+-- make highlights not look like a cursor
+vim.cmd('highlight MatchParen ctermfg=blue ctermbg=black')
