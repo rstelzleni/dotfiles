@@ -6,7 +6,7 @@ require 'nvim-treesitter.configs'.setup {
     'bash', 'cmake', 'cpp', 'css', 'cuda', 'diff', 'dockerfile', 'git_config',
     'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'glsl',
     'go', 'hlsl', 'html', 'java', 'javascript', 'json', 'make',
-    'python', 'rust', 'sql', 'svelte', 'typescript', 'usd', 'yaml'},
+    'python', 'rust', 'sql', 'svelte', 'typescript', 'usd', 'wgsl', 'yaml'},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,

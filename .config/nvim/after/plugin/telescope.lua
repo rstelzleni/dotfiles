@@ -26,8 +26,13 @@ vim.keymap.set('n', '<leader>fb', function()
                          sort_mru=true})
     end, {})
 vim.keymap.set('n', '<leader>fh', function()
-        builtin.help_tags({layout_strategy='vertical',
-                           path_display=fmt_path})
+        builtin.help_tags({layout_strategy='vertical'})
+    end, {})
+
+-- Note, requires ripgrep installed
+vim.keymap.set('n', '<leader>fs', function()
+        builtin.live_grep({layout_strategy='vertical',
+                           cwd=cached_cwd})
     end, {})
 
 -- My muscle memory! from old jlanzarotta/bufexplorer
