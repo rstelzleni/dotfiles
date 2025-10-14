@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 require('rstelzleni.autocommands')
+require('rstelzleni.functions')
 require('rstelzleni.lazyloader')
 require('rstelzleni.remap')
 require('rstelzleni.settings')
