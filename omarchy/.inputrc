@@ -1,0 +1,3 @@
+set completion-prefix-display-length 0
+set completion-ignore-case off
+
