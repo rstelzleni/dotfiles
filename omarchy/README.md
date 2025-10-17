@@ -48,3 +48,27 @@ Several files in .config/hypr
 - bindings.conf: SUPER key bindings for apps I use
 - monitors.conf: Monitor setup, specific to my two monitor desktop
 
+### taskfile.dev
+
+I use taskfile, but on pacman the `task` package is an older package called
+taskwarrior. taskfile.dev is installed as `go-task` and executes under that
+name. Because of that scripts that expect to be able to run `task` can't find
+it. If it's an alias those scripts need to be run where that alias is defined,
+which they may not be. So, solution is,
+
+```
+pacman -S go-task
+ln -s /usr/bin/go-task ~/.local/bin/task
+```
+
+You may need to create `~/.local/bin`, it does appear to already be in the
+PATH.
+
+### git
+
+See the config in .config here. It removes some aliases and different defaults,
+and adds diffs with delta. To get delta run
+
+```
+pacman -S git-delta
+```

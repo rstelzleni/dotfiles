@@ -1,0 +1,16 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Ryan Stelzleni
+	email = rstelzleni@gmail.com
+[core]
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    theme = Github
+[merge]
+    conflictStyle = zdiff3
+[alias]
+    diff-columns = -c delta.features=side-by-side diff
