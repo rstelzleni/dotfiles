@@ -10,7 +10,14 @@ if [ -f ~/.inputrc ]; then
     bind -f ~/.inputrc
 fi
 
-# My aliase 
+# Setup taskfile.dev autocompletions
+if command -v task >/dev/null 2>&1; then
+    eval "$(task --completion bash)"
+    # also complete with the default name, not just go-task
+    complete -F _go-task task
+fi
+
+# My aliases
 alias la='ls -a'
 
 # clear out some default aliases I don't want
@@ -23,3 +30,8 @@ unalias g
 unalias gcm
 unalias gcam
 unalias gcad
+
+# Rust setup
+if [ -f ~/.cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
