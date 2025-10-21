@@ -5,9 +5,14 @@ source ~/.local/share/omarchy/default/bash/rc
 # Add your own exports, aliases, and functions here.
 #
 
-# Fix cmd line autocomplete
-if [ -f ~/.inputrc ]; then
-    bind -f ~/.inputrc
+# Check if we're in an interactive shell
+if [[ $- == *i* ]]; then
+
+    # Fix cmd line autocomplete
+    if [ -f ~/.inputrc ]; then
+        bind -f ~/.inputrc
+    fi
+
 fi
 
 # Setup taskfile.dev autocompletions
@@ -34,4 +39,9 @@ unalias gcad
 # Rust setup
 if [ -f ~/.cargo/env ]; then
     . "$HOME/.cargo/env"
+fi
+
+# uv setup
+if [ -f ~/.local/bin/uv ]; then
+    . "$HOME/.local/share/../bin/env"
 fi
