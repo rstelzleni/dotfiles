@@ -1,6 +1,6 @@
 add_newline = true
 command_timeout = 200
-format = """[\U000f08c7 ❯](yellow) [$directory]($style)${custom.git_source}$git_branch $git_status $fill $time
+format = """[\U000f08c7 ❯](yellow) [$directory]($style)${custom.git_source}$git_branch $git_status $fill $python $time
 $character """
 
 [character]
@@ -9,6 +9,9 @@ success_symbol = "[❯](bold cyan)"
 
 [fill]
 symbol = '─'
+
+[python]
+format = "[${symbol}(<$virtualenv>)]($style)"
 
 [time]
 format = "[$time]($style)"
