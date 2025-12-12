@@ -57,6 +57,7 @@ Several files in .config/hypr
 - hypridle.conf: idle delay settings
 - bindings.conf: SUPER key bindings for apps I use
 - monitors.conf: Monitor setup, specific to my two monitor desktop
+- looknfeel.conf: preserve_split for panels
 
 ### taskfile.dev
 
