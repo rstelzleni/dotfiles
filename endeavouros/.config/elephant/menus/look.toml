@@ -1,0 +1,6 @@
+name = "look"
+pretty_name = "Look"
+
+[[entries]]
+text = "Wallpaper"
+actions = { "update_wallpaper" = "waypaper" }

@@ -1,0 +1,19 @@
+name = "system"
+pretty_name = "System"
+icon = "circle"
+
+[[entries]]
+text = "Shutdown"
+icon = "power"
+actions = { "shutdown" = "shutdown now" }
+
+[[entries]]
+text = "Restart"
+icon = "recycle"
+actions = { "restart" = "shutdown -r now" }
+
+[[entries]]
+text = "Suspend"
+icon = "pause"
+action = {"suspend": "systemctl suspend" }
+

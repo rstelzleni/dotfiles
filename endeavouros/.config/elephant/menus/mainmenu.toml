@@ -1,0 +1,20 @@
+name = "mainmenu"
+name_pretty = "Main Menu"
+icon = "circle"
+
+[[entries]]
+text = "Bookmarks"
+keywords = ["bookmarks"]
+icon = "bookmark"
+submenu = "bookmarks"
+
+[[entries]]
+text = "Look"
+submenu = "look"
+
+[[entries]]
+text = "System"
+icon = "circle"
+submenu = "system"
+
+

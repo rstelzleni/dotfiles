@@ -1,0 +1,6 @@
+[providers.sets.mainmenu]
+default = [
+  "menus:bookmarks",
+  "menus:mainmenu"
+]
+empty = ["menus:mainmenu"]

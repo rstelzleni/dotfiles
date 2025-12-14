@@ -1,0 +1,12 @@
+name = "bookmarks"
+name_pretty = "Bookmarks"
+icon = "bookmark"
+action = "xdg-open %VALUE%"
+
+[[entries]]
+text = "Twitch"
+value = "https://twitch.tv"
+
+[[entries]]
+text = "Claude"
+value = "https://claude.ai"
