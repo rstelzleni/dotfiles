@@ -1,6 +1,8 @@
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 -- List current monitors and resolutions possible: hyprctl monitors
--- You must relaunch Hyprland after changing any envs (use Super+Esc, then Relaunch)
+-- Changing envs here (e.g. GDK_SCALE) needs a full Hyprland restart to
+-- take effect -- a config reload isn't enough. Log out ($mainMod + SHIFT
+-- + Escape) and back in, or reboot.
 
 -- Optimized for retina-class 2x displays, like 13" 2.8K, 27" 5K, 32" 6K.
 hl.env("GDK_SCALE", "2")
