@@ -25,8 +25,6 @@ fi
 # Setup taskfile.dev autocompletions
 if command -v task >/dev/null 2>&1; then
     eval "$(task --completion bash)"
-    # also complete with the default name, not just go-task
-    complete -F _go-task task
 fi
 
 # My aliases
@@ -36,6 +34,8 @@ alias la='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias chk='checklist'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias screenshot='grim -g "$(slurp)" - | wl-copy'
+alias pyusd='$HOME/.local/share/pyusd-env/bin/python'
 
 if command -v zoxide &> /dev/null; then
   alias cd="zd"
