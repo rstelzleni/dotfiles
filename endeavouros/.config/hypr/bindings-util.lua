@@ -24,8 +24,7 @@ for _, key in ipairs(printKeys) do
     hl.bind("CTRL + " .. key, hl.dsp.exec_cmd("~/.config/hypr/scripts/screenshot.sh output"), { description = "Screenshot: whole monitor" })
 end
 
--- Lock / logout
-hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("hyprlock"), { description = "Lock screen" })
+-- logout
 -- `uwsm stop` per https://wiki.hypr.land/Configuring/Basics/Dispatchers/ --
 -- uwsm users should avoid the raw `exit` dispatcher, it skips uwsm's
 -- ordered shutdown.

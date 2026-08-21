@@ -29,9 +29,6 @@ hl.on("hyprland.start", function()
     -- hl.exec_cmd("waypaper --restore")
     hl.exec_cmd("uwsm app -- elephant")
     hl.exec_cmd("uwsm app -- walker --gapplication-service")
-    -- Idle lock/dim daemon, config in hypridle.conf. Don't also enable
-    -- the hypridle.service systemd unit -- that would start a second copy.
-    hl.exec_cmd("uwsm app -- hypridle")
 end)
 
 -- waypaper is wallpaper chooser, but it is currently not up to date for
